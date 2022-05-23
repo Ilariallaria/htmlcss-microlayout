@@ -55,8 +55,6 @@ a{
 
 /* --------------------------info-------------- */
 
-/* ------------------------------general */
-
 /* -------------------------------link */
 .third-part-link{
     text-align: center;
@@ -99,7 +97,8 @@ a{
 .company-name,
 .company-name a{
     color: black;
-    font-size: 13px;
+    font-size: 20px;
+    padding-bottom: 1rem;
 }
 
 .conditions{
@@ -128,11 +127,9 @@ a{
     font-size: 13px;
     border-bottom: 1px solid grey;
     border-top: 1px solid grey;
-    
 }
 
 /* ************************ADAPTIVE************** */
-
 
 /* MD */
 @media all and (min-width: 768px){
@@ -198,8 +195,17 @@ a{
         padding-right: 1rem;
     }
 
+
+    .company-name,
+    .standard-price,
+    .of-price{
+        text-align: center;
+        font-size: 25px;
+    }
+
     .btn_of_view{
         width: 100%;
+        margin: 1rem 0;
     }
 
 /* ---------------------------------------MUST */
