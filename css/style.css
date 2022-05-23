@@ -1,16 +1,216 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 img{
     width: 100%;
     display: block;
 }
+/* COMMON */
+.dots{
+    color: green;
+}
 
-.specific_offer-info{
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.dotted-text{
+    text-decoration: underline dotted grey;
+}
+
+.mobile-hidden{
+    display: none;
+}
+
+.lg-hidden{
+    display: block;
+}
+
+.red{
+    color: red;
+}
+
+.ms_bold{
+    font-weight: bold;
+}
+
+/*********************** CONTENT *******************/
+.ms_content{
+    padding: 0.2rem 1rem;
+}
+
+/* ------------------------heading------------- */
+.ms_heading{
+    padding: 0.5rem 0;
+}
+
+/* --------------------------info-------------- */
+
+/* ------------------------------general */
+
+/* -------------------------------link */
+.third-part-link{
+    text-align: center;
+    border-left: 1px dotted grey;
+    border-right: 1px dotted grey;
+}
+
+.third-part-link ul{
+    padding-bottom: 1rem;
+}
+
+.third-part-link hr{
+    margin: 0 auto;
+    color: lightgrey;
+    background-color: lightgrey;
+    width: 80%;
+}
+
+.see-more{
+    padding: 1rem 1rem;
+    font-size: 14px;
+}
+
+/* --------------------------------specific-info */
+.specific-info{
+    padding: 1rem 0;
     display: flex;
     justify-content: space-between;
     align-items: initial;
 }
 
+.standard-price{
+    font-size: 13px;
+    text-decoration: line-through;
+}
+.of-price{
+    font-size: 20px;
+}
+
+.company-name,
+.company-name a{
+    color: black;
+    font-size: 13px;
+}
+
+.conditions{
+    font-size: 14px;
+}
+
+.of-view a{
+ color: black;
+}
+
 .btn_of_view{
+    width: fit-content;
+    padding: 0.5rem;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 10px;
     color: black;
     background-color: #f0b217;
     border-color: #f0b217;
 }
+
+/*------------------------ must----------------- */
+
+.must{
+    text-align: center;
+    font-size: 13px;
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+    
+}
+
+/* ************************ADAPTIVE************** */
+
+
+/* MD */
+@media all and (min-width: 768px){
+      
+}
+
+/* LG */
+@media all and (min-width: 992px){
+
+    .mobile-hidden{
+        display: block;
+    }
+
+    .lg-hidden{
+        display: none;
+    }
+
+    .ms_card-cont{
+        padding: 0.1rem;
+        display: flex;
+    }
+/* -----------------------------------IMAGE */
+    .ms_img{
+        width: 30%;
+    }
+
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+/* -----------------------------------CONTENT */
+    .ms_content{
+        width: 70%;
+        height: 100%;
+        padding: 0 1rem;
+    }
+
+    /* --------------heading */
+    .ms_heading{
+        order: 2;
+    }
+
+    /* --------------ms_info */
+    .ms_info{
+        display: flex;
+    }
+    .ms_info .general-info{
+        order: 3;
+        padding-left: 1rem;
+    }
+
+    .client-safety ul{
+        margin-top: 1rem;
+    }
+
+    .ms_info .third-part-link {
+        order: 2;
+    }
+    .ms_info .specific-info{
+        order: 1;
+        display: block;
+        padding-right: 1rem;
+    }
+
+    .btn_of_view{
+        width: 100%;
+    }
+
+/* ---------------------------------------MUST */
+    .must{
+        display: none;
+    }
+    
+}
+
+/* XL */
+@media all and (min-width: 1200px){
+      
+}
+
