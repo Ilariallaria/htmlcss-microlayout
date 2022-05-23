@@ -1,0 +1,16 @@
+img{
+    width: 100%;
+    display: block;
+}
+
+.specific_offer-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: initial;
+}
+
+.btn_of_view{
+    color: black;
+    background-color: #f0b217;
+    border-color: #f0b217;
+}
